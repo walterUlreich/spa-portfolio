@@ -1,0 +1,524 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e3e5e8;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+.img-circle {
+  border: 1px solid #414347;
+}
+
+.jumbotron {
+  height: 500px;
+  background: linear-gradient(rgba(95,158,160,0.7),rgba(72,61,139,0.7)), url('mountain.jpg');
+  background-size: cover;
+  background-position: center top;
+  color: #fff;
+  position: relative;
+  margin-bottom: 0;
+  overflow-y: hidden;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+  font-weight: 100;
+  text-shadow: 1px 1px black;
+}
+
+#title {
+  background-color: darkorchid;
+  padding: 7px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 1px 1px 2px black;
+}
+
+#tag1 {
+  font-size: 5rem;
+  position: absolute;
+  top: 120px;
+  left: 18%;
+  opacity: 0.5;
+  text-shadow: 2px 2px black;
+}
+
+#tag2 {
+  font-size: 5rem;
+  position: absolute;
+  top: 120px;
+  right: 18%;
+  opacity: 0.5;
+  text-shadow: 2px 2px black;
+}
+
+nav {
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 18px;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 5%;
+  font-weight: 100;
+}
+
+nav ul li a {
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  text-shadow: 1px 1px black;
+}
+
+nav ul li a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+.about {
+  width: 50%;
+}
+
+.about h3 {
+  color: darkslateblue;
+  font-weight: 200;
+  margin-top: 40px;
+}
+
+.about p {
+  line-height: 1.5em;
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.projects {
+  margin-bottom: 40px;
+}
+
+.projects h3 {
+  font-weight: 200;
+  color: darkslateblue;
+  margin-bottom: 40px;
+}
+
+.projects img {
+  -webkit-transition: opacity .7s ease;
+  -moz-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+}
+
+.projects img:hover {
+  opacity: 0.5;
+}
+
+.projects .col-md-4 h3:hover {
+  color: cadetblue;
+}
+
+.projects a:hover {
+  text-decoration: none;
+}
+
+.footer {
+  height: 140px;
+  background-color: darkslateblue;
+  color: #fff;
+  padding-top: 60px;
+  word-spacing: .095rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+.footer p span {
+  color: hotpink;
+}
+
+.profile {
+  padding-left: 10%;
+  font-weight: 100;
+  padding-top: 40px;
+}
+
+.profile p {
+  width: 80%;
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+  line-height: 1.5em;
+}
+
+.profile h1 {
+  color: darkslateblue;
+}
+
+.profile h2 {
+  color: cadetblue;
+}
+
+.education {
+  background-color: cadetblue;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding-left: 3%;
+  padding-bottom: 550px;
+}
+
+.education p {
+  font-size: 1.375rem;
+}
+
+.education h2 {
+  font-size: 1.75rem;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.education h3 {
+  color: darkslateblue;
+  font-size: 1.5rem;
+}
+
+.contact_main {
+  height: 450px;
+  padding-top: 40px;
+}
+
+.contact_main h1 {
+  color: darkslateblue;
+  font-weight: 100;
+  margin-bottom: 80px;
+}
+
+.contact_main p {
+  font-size: 1.375rem;
+  font-weight: 100;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.fa-facebook-square {
+  color: #fff;
+  font-size: 3.125rem;
+  position: absolute;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  right: 22%;
+  bottom: 40px;
+}
+
+.fa-facebook-square:hover,
+.fa-linkedin-square:hover,
+.fa-github-square:hover {
+  color: hotpink;
+}
+
+.fa-linkedin-square {
+  color: #fff;
+  font-size: 3.125rem;
+  position: absolute;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  right: 17%;
+  bottom: 40px;
+}
+
+.fa-github-square {
+  color: #fff;
+  font-size: 3.125rem;
+  position: absolute;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  right: 12%;
+  bottom: 40px;
+}
+
+.fa-user-circle {
+  font-size: 3.125rem;
+  color: black;
+  position: absolute;
+  left: 5%;
+  top: 56px
+}
+
+.fa-briefcase {
+  font-size: 50px;
+  color: black;
+  position: absolute;
+  left: 5%;
+  top: 32%;
+}
+
+.fa-map-marker,
+.fa-phone,
+.fa-envelope {
+  font-size: 3.125rem;
+  margin-bottom: 40px;
+}
+
+.skills_main h1 {
+  font-weight: 100;
+  color: darkslateblue;
+}
+
+.skills_main h1:first-child {
+  margin-top: 40px
+}
+
+.skills_main h1:last-child {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 599px) {
+  .jumbotron {
+    background: linear-gradient(rgba(95,158,160,0.7),rgba(72,61,139,0.7));
+    height: auto;
+  }
+  nav ul {
+    left: 0;
+  }
+  nav ul,
+  nav ul li {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+  }
+  #tag1,
+  #tag2 {
+    display: none;
+  }
+  .profile {
+    width: 100%;
+    padding-left: 20%;
+  }
+  .profile p {
+    width: 90%;
+  }
+  .fa-briefcase {
+    top: auto;
+  }
+  .resume_main {
+    height: auto;
+  }
+  .education {
+    padding-left: 30px;
+    height: 300px;
+  }
+  .education h2 {
+    padding-top: 30px;
+  }
+  .contact_main {
+    height: auto;
+  }
+  .contact_main h1 {
+    margin-bottom: 8%%;
+  }
+  .contact_main p {
+    margin-bottom: 8%;
+  }
+  .skills_main h1 {
+    font-size: 1.75rem;
+  }
+
+  .footer {
+    height: auto;
+  }
+  .fa-facebook-square,
+  .fa-github-square,
+  .fa-linkedin-square {
+    position: relative;
+    right: 1%;
+    margin-top: 60px;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+
+  nav ul {
+    top: 34px;
+    position: relative;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+  .about {
+    width: 100%;
+  }
+  #tag1 {
+    font-size: 4rem;
+    left: 10%;
+  }
+  #tag2 {
+    font-size: 4rem;
+    right: 10%;
+  }
+  .profile {
+    width: 100%;
+    padding-left: 15%;
+  }
+  .profile p {
+    width: 90%;
+  }
+  .fa-briefcase {
+    top: auto;
+  }
+  .resume_main {
+    height: auto;
+  }
+  .education {
+    padding-left: 30px;
+    height: 300px;
+  }
+  .education h2 {
+    padding-top: 30px;
+  }
+  .contact_main {
+    height: auto;
+  }
+  .contact_main h1 {
+    margin-bottom: 8%%;
+  }
+  .contact_main p {
+    margin-bottom: 8%;
+  }
+  .skills_main h1 {
+    font-size: 1.9rem;
+  }
+  .footer {
+    height: auto;
+  }
+  .fa-facebook-square,
+  .fa-github-square,
+  .fa-linkedin-square {
+    position: relative;
+    right: 1%;
+    margin-top: 60px;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 991px) {
+  nav ul {
+    top: 34px;
+    position: relative;
+  }
+  nav ul li a {
+    font-size: 2rem;
+  }
+  .about {
+    width: 90%;
+  }
+  #tag1 {
+    font-size: 4rem;
+    left: 10%;
+  }
+  #tag2 {
+    font-size: 4rem;
+    right: 10%;
+  }
+  .resume_main {
+    height: auto;
+  }
+  .education {
+    padding-bottom: 100%;
+  }
+  .profile {
+    width: 100%;
+    padding-left: 15%;
+  }
+  .profile p {
+    width: 90%;
+  }
+  .fa-briefcase {
+    top: auto;
+  }
+  .education {
+    padding-left: 30px;
+    height: 300px;
+  }
+  .education h2 {
+    padding-top: 30px;
+  }
+  .contact_main {
+    height: auto;
+  }
+  .contact_main h1 {
+    margin-bottom: 8%%;
+  }
+  .contact_main p {
+    margin-bottom: 8%;
+  }
+  .footer {
+    height: auto;
+  }
+  .fa-facebook-square,
+  .fa-github-square,
+  .fa-linkedin-square {
+    position: relative;
+    right: 1%;
+    margin-top: 60px;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1133px) {
+  .about {
+    width: 90%;
+  }
+  .resume_main {
+    height: auto;
+  }
+  .education {
+    padding-bottom: 100%;
+  }
+  .profile {
+    padding-left: 10%;
+  }
+  .profile p {
+    width: 90%;
+  }
+  .fa-briefcase {
+    top: auto;
+  }
+  .education {
+    padding-left: 30px;
+    height: 300px;
+  }
+  .education h2 {
+    padding-top: 30px;
+  }
+}

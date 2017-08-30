@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.5.3/vue-router.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+
+        <div id="app">
+
+          <div class="jumbotron text-center container-fluid">
+            <img class="img-circle" src="headshot2.jpg" height="200" width="210">
+            <h1>Walter Ulreich</h1>
+            <h2><span id="title">junior web developer</span></h2>
+            <p id="tag1"><span class="fa fa-angle-left"></span>W<span class="fa fa-angle-right"></span></p>
+            <p id="tag2"><span class="fa fa-angle-left"></span>/U<span class="fa fa-angle-right"></span></p>
+
+            <nav>
+              <ul>
+                <li><router-link to="/">about me</router-link></li>
+                <li><router-link to="/resume">resume</router-link></li>
+                <li><router-link to="/skills">skills</router-link></li>
+                <li><router-link to="/contact">contact</router-link></li>
+              </ul>
+            <nav>
+
+         </div>
+
+
+         <router-view></router-view>
+
+            <div class="footer container-fluid text-center">
+              <p>&copy; All rights reserved | Design by <span>Walter Ulreich</span></p>
+              <a href="#"><span class="fa fa-facebook-square"></span></a>
+              <a href="#"><span class="fa fa-linkedin-square"></span></a>
+              <a href="#"><span class="fa fa-github-square"></span></a>
+            </div>
+
+        </div>
+
+        <script type="text/x-template" id="resume">
+          <div class="resume_main container-fluid">
+          <div class="row">
+          <div class="profile col-md-8">
+            <span class="fa fa-user-circle"></span>
+            <h1>Career Profile</h1>
+            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+            <span class="fa fa-briefcase"></span>
+            <h1>Experiences</h1>
+              <h2>Job Title</h2>
+              <h3>Company</h2>
+              <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+              <h2>Job Title</h2>
+              <h3>Company</h2>
+              <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+            </div>
+
+          <div class="education col-md-4">
+            <h2>Education</h2>
+            <h3>MM in Computer Science</h3>
+            <p>Some University<br>2015-2017</p><br><br>
+            <h3>BS in Web Development</h3>
+            <p>Some University<br>2010-2014</p>
+          </div>
+
+        </div>
+        </div>
+      </script>
+
+        <script type="text/x-template" id="skills">
+          <div class="skills_main container text-center">
+              <h1>HTML5</h1>
+              <h1>CSS3</h1>
+              <h1>Javascript</h1>
+              <h1>jQuery</h1>
+              <h1>CSS Frameworks</h1>
+              <h1>Javascript Frameworks</h1>
+              <h1>MEAN Stack</h1>
+              <h1>WordPress</h1>
+          </div>
+        </script>
+
+        <script type="text/x-template" id="contact">
+          <div class="container contact_main text-center">
+            <h1>Get In Touch</h1>
+            <div class="row">
+              <div class="col-md-4">
+                <span class="fa fa-map-marker"></span>
+                <p>3950 Colorado Avenue<br>Boulder, Colorado</p>
+              </div>
+              <div class="col-md-4">
+                <span class="fa fa-phone"></span>
+                <p>mob. +847 791 8811</p>
+              </div>
+              <div class="col-md-4">
+                <span class="fa fa-envelope"></span>
+                <p>wulreich99@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>
