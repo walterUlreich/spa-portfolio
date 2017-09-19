@@ -52,7 +52,35 @@ var myRouter = new VueRouter({
         {
             path: '/resume',
             component : {
-                template: '#resume',
+                template: `
+                <div class="resume_main container-fluid">
+                <div class="row">
+                <div class="profile col-md-8">
+                  <span class="fa fa-user-circle"></span>
+                  <h1>Career Profile</h1>
+                  <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+                  <span class="fa fa-briefcase"></span>
+                  <h1>Experiences</h1>
+                    <h2>Job Title</h2>
+                    <h3>Company</h2>
+                    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+                    <h2>Job Title</h2>
+                    <h3>Company</h2>
+                    <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+                  </div>
+
+                <div class="education col-md-4">
+                  <h2>Education</h2>
+                  <h3>MM in Computer Science</h3>
+                  <p>Some University<br>2015-2017</p><br><br>
+                  <h3>BS in Web Development</h3>
+                  <p>Some University<br>2010-2014</p>
+                </div>
+
+              </div>
+              </div>`,
                 created: function(){ console.log('created the images component')},
                 destroyed: function(){ console.log('destroyed the images component')}
             }
@@ -61,13 +89,40 @@ var myRouter = new VueRouter({
         {
             path: '/skills',
             component: {
-              template: '#skills',
+              template: `
+              <div class="skills_main container text-center">
+                  <h1>HTML5</h1>
+                  <h1>CSS3</h1>
+                  <h1>Javascript</h1>
+                  <h1>jQuery</h1>
+                  <h1>CSS Frameworks</h1>
+                  <h1>Javascript Frameworks</h1>
+                  <h1>MEVN Stack</h1>
+                  <h1>WordPress</h1>
+              </div>`,
             }
         },
         {
             path: '/contact',
             component: {
-              template: '#contact',
+              template: `
+              <div class="container contact_main text-center">
+                <h1>Get In Touch</h1>
+                <div class="row">
+                  <div class="col-md-4">
+                    <span class="fa fa-map-marker"></span>
+                    <p>3950 Colorado Avenue<br>Boulder, Colorado</p>
+                  </div>
+                  <div class="col-md-4">
+                    <span class="fa fa-phone"></span>
+                    <p>mob. +847 791 8811</p>
+                  </div>
+                  <div class="col-md-4">
+                    <span class="fa fa-envelope"></span>
+                    <p>wulreich99@gmail.com</p>
+                  </div>
+                </div>
+              </div>`,
             }
         },
 
